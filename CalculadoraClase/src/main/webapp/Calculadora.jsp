@@ -1,13 +1,13 @@
 <%@page import="com.jacaranda.CalcularException"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="ISO-8859-1">
-		<title>Calcu</title>
-	</head>
-	<body>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
 		<%@page import="com.jacaranda.Calculadora" %>
 		<%
 			double number1 = Double.parseDouble(request.getParameter("number1"));
@@ -39,5 +39,5 @@
 			
 		%>
 			<p>El resultado de la operacion es: <%=result%></p>
-	</body>
+</body>
 </html>
